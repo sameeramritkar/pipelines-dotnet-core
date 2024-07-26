@@ -3,7 +3,7 @@ name: sampleWeb_$(Date:yyyyMMdd)$(Rev:.r)
 trigger:
 - main
 pool:
-  name: Default
+  vmImage: $(imageName)
 steps:
 - task: VSBuild@1
   inputs:
